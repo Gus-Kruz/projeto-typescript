@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entregável TypeScript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="hm-page">
+        <div class="hm-grid" aria-hidden="true"></div>
+        <div class="hm-scanlines" aria-hidden="true"></div>
+        <div class="hm-sun" aria-hidden="true"></div>
+        <section class="hm-panel">
+            <h1 class="hm-title">TRANSAÇÕES</h1>
+            <div class="hm-stats">
+                <div class="hm-stat">
+                    <span class="hm-stat__label">Total de transações</span>
+                    <span class="hm-stat__value" id="total_transacoes">—</span>
+                </div>
+                <div class="hm-stat hm-stat--highlight">
+                    <span class="hm-stat__label">Valor total (pagas)</span>
+                    <span class="hm-stat__value" id="total">—</span>
+                </div>
+                <div class="hm-stat">
+                    <span class="hm-stat__label">Cartão de Crédito</span>
+                    <span class="hm-stat__value" id="total_cartao">—</span>
+                </div>
+                <div class="hm-stat">
+                    <span class="hm-stat__label">Boleto</span>
+                    <span class="hm-stat__value" id="total_boleto">—</span>
+                </div>
+            </div>
+            <p class="hm-footer">
+                Meio mais utilizado: <span id="meio_valor">—</span>
+            </p>
+        </section>
+    </main>
+    <script type="module" src="projeto.js"></script>
+</body>
+</html>
