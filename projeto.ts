@@ -139,7 +139,7 @@ function calcularNumeroTransacoes(transacoes: Array<Transacao>): number {
 
 function calcularNumeroCartao(transacoes: Array<Transacao>): number {
     return transacoes.filter(
-        (transacao) => transacao["Forma de Pagamento"] === "Cartão de Crédito"
+        (transacao) => transacao["Forma de Pagamento"] === "Cartão de Crédito",
     ).length;
 }
 
